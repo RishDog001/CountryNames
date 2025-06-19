@@ -3,6 +3,6 @@ This is a conversion tool that uses a web service API from Geonames to convert m
 
 For the second function (find_country_with_fuzzy), it simply loops through a range of numbers between 1 and 10 inclusively. It then divides the fuzzy value by 10 to output a random value between 0 and 1, where 0 is the strictest value and 1 is the most relaxed value. If no match is detected, it returns the default value.
 
-For the tool to work without errors using the API, you need to create an account on Geonames. You can do so here: https://www.geonames.org/login. Once your account is created, you then need to enable free services on your account and assign your Geonames username to the username parameter variable (I.e., username == "Username goes here"). To test it out, simply type in any country name in quotes and deliberately misspell it (I.e., name == "Brzl").
+For the tool to work without errors using the API, you need to create an account on Geonames. You can do so here: https://www.geonames.org/login. Once your account is created, you then need to enable free services on your account and assign your Geonames username to the username parameter variable (I.e., username == "Username goes here"). To test it out, type in any country name in quotes and deliberately misspell it (I.e., name == "Brzl"). For best results, the fuzzy value should be between 0 and 0.50. The stricter the value, the more concise the output will be, whereas if the value is too relaxed (> 0.50), it will result in inconsistencies.
 
 Full list of countries: https://www.geonames.org/countries/
